@@ -1,0 +1,148 @@
+body {
+  background: linear-gradient(
+    89deg,
+    rgb(21, 74, 189) 0.1%,
+    rgb(26, 138, 211) 51.5%,
+    rgb(72, 177, 234) 100.2%
+  );
+}
+
+h4 {
+  text-align: center;
+  margin-top: 70px;
+  color: #212529;
+}
+.author {
+  text-align: center;
+  color: #add7fb;
+}
+.container {
+  margin: 0 auto;
+  margin-top: 50px;
+  font-family: sans-serif;
+}
+.first-section {
+  margin: 0 auto;
+  border: 1px solid #bbb;
+  padding: 10px;
+  border-radius: 50px;
+  max-width: 580px;
+  background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
+  border: none;
+}
+.location {
+  margin-left: 20px;
+}
+
+.location:hover {
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.form-control {
+  text-align: left;
+  margin-left: -15px;
+}
+.form-control {
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.search {
+  margin-left: -30px;
+}
+
+.fa-solid {
+  font-size: 30px;
+  text-align: center;
+}
+.btn-light {
+  border-radius: 27px;
+  background: rgba(62, 166, 227, 0.6);
+  border: none;
+  margin-right: 10px;
+  box-shadow: 1px 1px 1px #212529;
+}
+
+.btn-light:hover {
+  background: rgb(62, 166, 227);
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+.celsius-symbol {
+  margin-right: -10px;
+  margin-left: 20px;
+}
+.first-box {
+  margin: 15px auto;
+  max-width: 290px;
+  border: 2px solid rgb(168, 165, 165);
+  border-radius: 50px;
+  background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
+  text-align: center;
+  border: none;
+  margin-right: -180px;
+  padding-bottom: 15px;
+}
+h1 {
+  padding: 10px 0 0 20px;
+  font-size: 50px;
+}
+p {
+  line-height: 20px;
+  margin-top: -3px;
+  font-weight: 500;
+}
+.current-weather {
+  font-weight: bold;
+}
+.celcius {
+  font-weight: normal;
+  font-size: 70px;
+  vertical-align: super;
+  line-height: 48px;
+  margin-top: 1px;
+  margin-right: -20px;
+}
+.C-symbol {
+  position: relative;
+  top: -45px;
+  right: -15px;
+}
+
+.weather-details {
+  font-size: 12px;
+  line-height: 17px;
+  text-align: left;
+  margin-left: -15px;
+}
+.rain-icon {
+  font-size: 100px;
+}
+.forecast {
+  margin: 15px auto;
+  margin-left: 16px;
+  font-weight: 550;
+}
+.fourth-section {
+  margin: 15px auto;
+  max-width: 290px;
+  border: 1px solid #bbb;
+  border-radius: 50px;
+  background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
+  border: none;
+  padding-bottom: 15px;
+  margin-left: 200px;
+}
+.row-6 {
+  border: 1px solid #212529;
+  padding: 8px;
+  margin: 6px 12px;
+  border-radius: 10px;
+  font-size: 20px;
+  background: rgba(62, 166, 227, 0.6);
+  border: none;
+}
+.row-6:hover {
+  background: rgb(62, 166, 227);
+}
