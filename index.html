@@ -13,135 +13,150 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-		<link rel="stylesheet" href="src/styles.css" />
-		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
 
   <body>
-			<body>
-					<div class="content">
-						<div class="text-dark">
-							<h4>Weather App</h4>
-							<div class="author"><em>Coded by Akanesi Tohotoa</em></div>
-							<div class="container">
-								<div class="first-section">
-									<div class="row">
-										<div class="col-3">
-											<button type="button" class="btn btn-outline-primary location" id="current-location">
-												Current <i class="fa-solid fa-location-dot fs-6"></i>
-											</button>
-										</div>
-										<div class="col-5">
-											<form id="search-city-form">
-												<input
-													type="text"
-													class="form-control"
-													id="search-input"
-													autocomplete="off"
-													placeholder="Enter a city"
-													aria-label="Username"
-													aria-describedby="basic-addon1">
-											</div>
-													<div class="col-1">
-												<button type="submit" value="Search" class="btn btn-primary search">
-													Search
-												</button>
-											</div>
-									</form>
-										<div class="col">
-											<button type="button" class="btn btn-light celsius-symbol" id="celcius-temp" >°C</button>
-											<button type="button" class="btn btn-light" id="farenheit-temp">°F</button>
-										</div>
-									</div>
-								</div>
-			
-								<div class="second-section">
-									<div class="row">
-										<div class="col-4 first-box">
-											<h1></h1>
-											<p>
-												<em>
-											<div id="current-time"></div>
-												<div class="current-weather" id="description">	Mostly Rain </div>
-												</em>
-											</p>
-											<div class="third-section">
-												<div class="row">
-													<div class="col-7">
-														<span class="celcius" id="celciusTemp"></span>
-														<span class="C-symbol">°C</span>
-													</div>
-													<div class="col-5 weather-details">
-														<div id="humidity">Humidity: </div>
-														<div id="wind">Wind: </div>
-													</div>
-												</div>
-											</div>
-			
-											<i class="fa-solid fa-cloud-rain rain-icon text-secondary"></i>
-										</div>
-			
-										<div class="col-4 fourth-section">
-											<p class="forecast">5 DAY FORECAST</p>
-											<div class="row-6">
-												<div class="row">
-													<div class="col">Sat</div>
-													<div class="col">21°</div>
-													<div class="col">
-														<i class="fa-solid fa-cloud-showers-heavy text-dark"></i>
-													</div>
-													<div class="col">19°</div>
-												</div>
-											</div>
-											<div class="row-6">
-												<div class="row">
-													<div class="col">Sun</div>
-													<div class="col">23°</div>
-													<div class="col">
-														<i class="fa-solid fa-cloud-sun-rain text-secondary"></i>
-													</div>
-													<div class="col">18°</div>
-												</div>
-											</div>
-											<div class="row-6">
-												<div class="row">
-													<div class="col">Mon</div>
-													<div class="col">25°</div>
-													<div class="col">
-														<i class="fa-solid fa-cloud-sun text-secondary"></i>
-													</div>
-													<div class="col">20°</div>
-												</div>
-											</div>
-											<div class="row-6">
-												<div class="row">
-													<div class="col">Tue</div>
-													<div class="col">26°</div>
-													<div class="col">
-														<i class="fa-solid fa-sun text-warning"></i>
-													</div>
-													<div class="col">22°</div>
-												</div>
-											</div>
-											<div class="row-6">
-												<div class="row">
-													<div class="col">Wed</div>
-													<div class="col">28°</div>
-													<div class="col">
-														<i class="fa-solid fa-sun text-warning"></i>
-													</div>
-													<div class="col">22°</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="open-source">
-						<a href="https://github.com/Talilotu/Weather-App" target="blank" class="link-light">Open-source code</a>, <em>by Akanesi Tohotoa</em>
-						</div>
-		<script src="src/index.js"></script>
+    <div class="content">
+      <div class="text-dark">
+        <h4>Weather App</h4>
+        <div class="author"><em>Coded by Akanesi Tohotoa</em></div>
+        <div class="container">
+          <div class="first-section">
+            <div class="row">
+              <div class="col-3">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary location"
+                  id="current-location"
+                >
+                  Current <i class="fa-solid fa-location-dot fs-6"></i>
+                </button>
+              </div>
+              <div class="col-5">
+                <form id="search-city-form">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="search-input"
+                    autocomplete="off"
+                    placeholder="Enter a city"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                </form>
+              </div>
+              <div class="col-1">
+                <button
+                  value="Search"
+                  class="btn btn-primary search"
+                  id="search-button"
+                >
+                  search
+                </button>
+              </div>
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-light celsius-symbol"
+                  id="celcius-temp"
+                >
+                  °C
+                </button>
+                <button type="button" class="btn btn-light" id="farenheit-temp">
+                  °F
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="second-section">
+            <div class="row">
+              <div class="col-4 first-box">
+                <h1></h1>
+                <p>
+                  <em>
+                    <div id="current-time"></div>
+                    <div class="current-weather" id="description">
+                      Mostly Rain
+                    </div>
+                  </em>
+                </p>
+                <div class="third-section">
+                  <div class="row">
+                    <div class="col-7">
+                      <span class="celcius" id="celciusTemp"></span>
+                      <span class="C-symbol">°C</span>
+                    </div>
+                    <div class="col-5 weather-details">
+                      <div id="humidity">Humidity:</div>
+                      <div id="wind">Wind:</div>
+                    </div>
+                  </div>
+                </div>
+
+                <i class="fa-solid fa-cloud-rain rain-icon text-secondary"></i>
+              </div>
+
+              <div class="col-4 fourth-section">
+                <p class="forecast">5 DAY FORECAST</p>
+                <div class="row-6">
+                  <div class="row">
+                    <div class="col">Sat</div>
+                    <div class="col">21°</div>
+                    <div class="col">
+                      <i class="fa-solid fa-cloud-showers-heavy text-dark"></i>
+                    </div>
+                    <div class="col">19°</div>
+                  </div>
+                </div>
+                <div class="row-6">
+                  <div class="row">
+                    <div class="col">Sun</div>
+                    <div class="col">23°</div>
+                    <div class="col">
+                      <i class="fa-solid fa-cloud-sun-rain text-secondary"></i>
+                    </div>
+                    <div class="col">18°</div>
+                  </div>
+                </div>
+                <div class="row-6">
+                  <div class="row">
+                    <div class="col">Mon</div>
+                    <div class="col">25°</div>
+                    <div class="col">
+                      <i class="fa-solid fa-cloud-sun text-secondary"></i>
+                    </div>
+                    <div class="col">20°</div>
+                  </div>
+                </div>
+                <div class="row-6">
+                  <div class="row">
+                    <div class="col">Tue</div>
+                    <div class="col">26°</div>
+                    <div class="col">
+                      <i class="fa-solid fa-sun text-warning"></i>
+                    </div>
+                    <div class="col">22°</div>
+                  </div>
+                </div>
+                <div class="row-6">
+                  <div class="row">
+                    <div class="col">Wed</div>
+                    <div class="col">28°</div>
+                    <div class="col">
+                      <i class="fa-solid fa-sun text-warning"></i>
+                    </div>
+                    <div class="col">22°</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
   </body>
 </html>

@@ -70,7 +70,7 @@ function currentLocation(event) {
 let locationButton = document.querySelector("#current-location");
 locationButton.addEventListener("click", currentLocation);
 
-let searchForm = document.querySelector("#search-city-form");
-searchForm.addEventListener("submit", handleSubmit);
+let searchForm = document.querySelector("#search-button");
+searchForm.addEventListener("click", handleSubmit);
 
 searchCity("Sydney");
