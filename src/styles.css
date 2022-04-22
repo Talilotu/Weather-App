@@ -23,15 +23,15 @@ h4 {
 }
 .first-section {
   margin: 0 auto;
+  padding-top: 10px;
   border: 1px solid #bbb;
-  padding: 10px;
   border-radius: 50px;
   max-width: 580px;
   background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
   border: none;
 }
 .location {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .location:hover {
@@ -41,7 +41,7 @@ h4 {
 
 .form-control {
   text-align: left;
-  margin-left: -15px;
+  margin: 0 auto;
 }
 .form-control {
   cursor: pointer;
@@ -71,7 +71,7 @@ h4 {
 }
 .celsius-symbol {
   margin-right: -10px;
-  margin-left: 20px;
+  margin-left: 5px;
 }
 .first-box {
   margin: 15px auto;

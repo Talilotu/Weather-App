@@ -34,8 +34,8 @@
                   Current <i class="fa-solid fa-location-dot fs-6"></i>
                 </button>
               </div>
-              <div class="col-5">
-                <form id="search-city-form">
+              <div class="col-6">
+                <form id="search-city-form" class="input-group mb-3">
                   <input
                     type="text"
                     class="form-control"
@@ -45,17 +45,14 @@
                     aria-label="Username"
                     aria-describedby="basic-addon1"
                   />
+                  <input
+                    type="submit"
+                    value="Search"
+                    class="btn btn-primary search"
+                  />
                 </form>
               </div>
-              <div class="col-1">
-                <button
-                  value="Search"
-                  class="btn btn-primary search"
-                  id="search-button"
-                >
-                  search
-                </button>
-              </div>
+
               <div class="col">
                 <button
                   type="button"
@@ -155,6 +152,10 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="open-source">
+        <a href="" target="blank" class="link-light">Open-source code</a>,
+        <em>by Akanesi Tohotoa</em>
       </div>
     </div>
     <script src="src/index.js"></script>
