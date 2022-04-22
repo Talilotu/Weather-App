@@ -146,3 +146,9 @@ p {
 .row-6:hover {
   background: rgb(62, 166, 227);
 }
+.open-source {
+  display: block;
+  padding-left: 440px;
+  color: #fff;
+  font-size: small;
+}
