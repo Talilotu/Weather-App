@@ -111,6 +111,7 @@ p {
   position: relative;
   top: -45px;
   right: -15px;
+  font-weight: bold;
 }
 
 .weather-details {
