@@ -21,6 +21,7 @@ h4 {
   margin-top: 50px;
   font-family: sans-serif;
 }
+
 .first-section {
   margin: 0 auto;
   padding-top: 10px;
@@ -73,6 +74,7 @@ h4 {
   margin-right: -10px;
   margin-left: 5px;
 }
+
 .first-box {
   margin: 15px auto;
   max-width: 290px;
@@ -147,8 +149,9 @@ p {
   background: rgb(62, 166, 227);
 }
 .open-source {
+  margin: -5px auto;
+  max-width: 290px;
   display: block;
-  padding-left: 440px;
   color: #fff;
   font-size: small;
 }
