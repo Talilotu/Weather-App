@@ -52,8 +52,8 @@ function handleSubmit(event) {
 }
 
 function showcurrentLocation(position) {
-  let lat = Math.round(position.coords.latitude);
-  let lon = Math.round(position.coords.longitude);
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
   let units = "metric";
   let apiKey = "f5098deaf242be7ff2c5af1ac2ce51ad";
   let weatherUrl = "https://api.openweathermap.org/data/2.5/weather?";
