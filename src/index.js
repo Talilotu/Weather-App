@@ -28,7 +28,7 @@ function showWeather(response) {
 
   document.querySelector("h1").innerHTML = response.data.name;
   document.querySelector("#description").innerHTML =
-    response.data.weather[0].main;
+    response.data.weather[0].description;
   let celciusTemp = document.querySelector("#celciusTemp");
   celciusTemp.innerHTML = `${temperature}`;
   let humid = document.querySelector("#humidity");
@@ -37,7 +37,6 @@ function showWeather(response) {
   wind.innerHTML = `Wind: ${speed}km/h`;
 
   let currentDate = document.querySelector("#current-time");
-  console.log(response);
   currentDate.innerHTML = formatDate(response.data.dt * 1000);
 }
 function searchCity(city) {
