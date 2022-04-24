@@ -123,8 +123,7 @@ p {
   text-align: left;
   margin-left: -15px;
 }
-.rain-icon {
-  font-size: 100px;
+.weather-icon {
 }
 .forecast {
   margin: 15px auto;
