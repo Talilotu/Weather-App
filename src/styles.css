@@ -93,11 +93,13 @@ h1 {
 }
 p {
   line-height: 20px;
-  margin-top: -3px;
+  margin-top: -15px;
   font-weight: 500;
 }
 .current-weather {
   font-weight: bold;
+  margin-bottom: 40px;
+  line-height: 20px;
 }
 .celcius {
   font-weight: normal;
