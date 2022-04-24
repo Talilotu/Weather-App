@@ -87,22 +87,22 @@ h4 {
   padding-bottom: 15px;
 }
 h1 {
-  padding: 10px 0 0 20px;
+  padding-top: 10px;
   font-size: 45px;
   margin: auto;
+  max-width: 250px;
 }
 p {
   line-height: 20px;
-  margin-top: -15px;
+  margin-top: -10px;
   font-weight: 500;
 }
-.current-weather {
-  font-weight: bold;
+.current-weather-description {
   margin-bottom: 40px;
   line-height: 20px;
   text-transform: capitalize;
 }
-.celcius {
+.temperature {
   font-weight: normal;
   font-size: 70px;
   vertical-align: super;
@@ -115,15 +115,19 @@ p {
   top: -45px;
   right: -15px;
   font-weight: bold;
+  font-size: 20px;
 }
 
 .weather-details {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 17px;
   text-align: left;
   margin-left: -15px;
 }
 .weather-icon {
+  width: 150px;
+  max-width: 250px;
+  margin-top: -30px;
 }
 .forecast {
   margin: 15px auto;
