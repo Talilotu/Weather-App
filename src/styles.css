@@ -158,8 +158,21 @@ p {
 }
 .open-source {
   margin: -5px auto;
-  max-width: 290px;
+  max-width: 400px;
   display: block;
-  color: #fff;
+  color: #d8dde0;
+
   font-size: small;
+}
+a:link {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:visited {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: underline;
 }
