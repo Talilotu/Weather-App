@@ -90,7 +90,10 @@ function farenheitTemperature(event) {
   event.preventDefault();
   let farenheit = document.querySelector("#celciusTemp");
   let farenheitTemp = (celsiusTemperature * 9) / 5 + 32;
+  let convertFarenheit = document.querySelector("#c-symbol");
+
   farenheit.innerHTML = Math.round(farenheitTemp);
+  convertFarenheit.innerHTML = "°F";
 }
 
 let farenheitButton = document.querySelector("#farenheit-temp");
@@ -99,7 +102,9 @@ farenheitButton.addEventListener("click", farenheitTemperature);
 function celciusTemperature(event) {
   event.preventDefault();
   let celcius = document.querySelector("#celciusTemp");
+  let convertFarenheit = document.querySelector("#c-symbol");
   celcius.innerHTML = Math.round(celsiusTemperature);
+  convertFarenheit.innerHTML = "°C";
 }
 
 let celciusButton = document.querySelector("#celcius-temp");
