@@ -22,7 +22,8 @@ function formatDate(timestamp) {
 }
 
 function showWeather(response) {
-  let temperature = Math.round(response.data.main.temp);
+  celsiusTemperature = response.data.main.temp;
+  let temperature = Math.round(celsiusTemperature);
   let humidity = response.data.main.humidity;
   let speed = Math.round(response.data.wind.speed);
   console.log(response);
@@ -31,6 +32,7 @@ function showWeather(response) {
   document.querySelector("h1").innerHTML = response.data.name;
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
+
   let celciusTemp = document.querySelector("#celciusTemp");
   celciusTemp.innerHTML = `${temperature}`;
   let humid = document.querySelector("#humidity");
@@ -83,5 +85,26 @@ locationButton.addEventListener("click", currentLocation);
 
 let searchForm = document.querySelector("#search-city-form");
 searchForm.addEventListener("submit", handleSubmit);
+
+function farenheitTemperature(event) {
+  event.preventDefault();
+  let farenheit = document.querySelector("#celciusTemp");
+  let farenheitTemp = (celsiusTemperature * 9) / 5 + 32;
+  farenheit.innerHTML = Math.round(farenheitTemp);
+}
+
+let farenheitButton = document.querySelector("#farenheit-temp");
+farenheitButton.addEventListener("click", farenheitTemperature);
+
+function celciusTemperature(event) {
+  event.preventDefault();
+  let celcius = document.querySelector("#celciusTemp");
+  celcius.innerHTML = Math.round(celsiusTemperature);
+}
+
+let celciusButton = document.querySelector("#celcius-temp");
+celciusButton.addEventListener("click", celciusTemperature);
+
+let celsiusTemperature = null;
 
 searchCity("Sydney");
