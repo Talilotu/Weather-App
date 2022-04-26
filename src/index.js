@@ -33,8 +33,8 @@ function showWeather(response) {
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
 
-  let celciusTemp = document.querySelector("#celciusTemp");
-  celciusTemp.innerHTML = `${temperature}`;
+  let Temp = document.querySelector("#celsiusTemp");
+  Temp.innerHTML = `${temperature}`;
   let humid = document.querySelector("#humidity");
   humid.innerHTML = `Humidity: ${humidity}%`;
   let wind = document.querySelector("#wind");
@@ -86,9 +86,9 @@ locationButton.addEventListener("click", currentLocation);
 let searchForm = document.querySelector("#search-city-form");
 searchForm.addEventListener("submit", handleSubmit);
 
-function farenheitTemperature(event) {
+function showFarenheitTemp(event) {
   event.preventDefault();
-  let farenheit = document.querySelector("#celciusTemp");
+  let farenheit = document.querySelector("#celsiusTemp");
   let farenheitTemp = (celsiusTemperature * 9) / 5 + 32;
   let convertFarenheit = document.querySelector("#c-symbol");
 
@@ -97,18 +97,18 @@ function farenheitTemperature(event) {
 }
 
 let farenheitButton = document.querySelector("#farenheit-temp");
-farenheitButton.addEventListener("click", farenheitTemperature);
+farenheitButton.addEventListener("click", showFarenheitTemp);
 
-function celciusTemperature(event) {
+function showCelsiusTemp(event) {
   event.preventDefault();
-  let celcius = document.querySelector("#celciusTemp");
+  let celsius = document.querySelector("#celsiusTemp");
   let convertFarenheit = document.querySelector("#c-symbol");
-  celcius.innerHTML = Math.round(celsiusTemperature);
+  celsius.innerHTML = Math.round(celsiusTemperature);
   convertFarenheit.innerHTML = "°C";
 }
 
-let celciusButton = document.querySelector("#celcius-temp");
-celciusButton.addEventListener("click", celciusTemperature);
+let celsiusButton = document.querySelector("#celsius-temp");
+celsiusButton.addEventListener("click", showCelsiusTemp);
 
 let celsiusTemperature = null;
 
