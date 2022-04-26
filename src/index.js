@@ -23,9 +23,10 @@ function formatDate(timestamp) {
 
 function showWeather(response) {
   celsiusTemperature = response.data.main.temp;
+  windSpeed = Math.round(response.data.wind.speed);
   let temperature = Math.round(celsiusTemperature);
   let humidity = response.data.main.humidity;
-  let speed = Math.round(response.data.wind.speed);
+  let speed = windSpeed;
   console.log(response);
   let icon = response.data.weather[0].icon;
 
@@ -38,7 +39,7 @@ function showWeather(response) {
   let humid = document.querySelector("#humidity");
   humid.innerHTML = `Humidity: ${humidity}%`;
   let wind = document.querySelector("#wind");
-  wind.innerHTML = `Wind: ${speed}km/h`;
+  wind.innerHTML = `Wind: ${speed} km/h`;
 
   let currentDate = document.querySelector("#current-time");
   currentDate.innerHTML = formatDate(response.data.dt * 1000);
@@ -91,9 +92,12 @@ function showFarenheitTemp(event) {
   let farenheit = document.querySelector("#celsiusTemp");
   let farenheitTemp = (celsiusTemperature * 9) / 5 + 32;
   let convertFarenheit = document.querySelector("#c-symbol");
+  let mph = Math.round(windSpeed / 1.609);
+  let mphconversion = document.querySelector("#wind");
 
   farenheit.innerHTML = Math.round(farenheitTemp);
   convertFarenheit.innerHTML = "°F";
+  mphconversion.innerHTML = `Wind: ${mph} mph`;
 }
 
 let farenheitButton = document.querySelector("#farenheit-temp");
@@ -103,8 +107,11 @@ function showCelsiusTemp(event) {
   event.preventDefault();
   let celsius = document.querySelector("#celsiusTemp");
   let convertFarenheit = document.querySelector("#c-symbol");
+  let wSpeed = document.querySelector("#wind");
+
   celsius.innerHTML = Math.round(celsiusTemperature);
   convertFarenheit.innerHTML = "°C";
+  wSpeed.innerHTML = `Wind: ${windSpeed} km/h`;
 }
 
 let celsiusButton = document.querySelector("#celsius-temp");
