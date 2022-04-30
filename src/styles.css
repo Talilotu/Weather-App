@@ -53,10 +53,6 @@ h4 {
   margin-left: -30px;
 }
 
-.fa-solid {
-  font-size: 30px;
-  text-align: center;
-}
 .btn-light {
   border-radius: 27px;
   background: rgba(62, 166, 227, 0.6);
@@ -140,7 +136,11 @@ p {
   margin-top: 30px;
   line-height: 2px;
 }
-
+.forecast-icon {
+  display: block;
+  margin: -16px auto;
+  display: inline-block;
+}
 .right-column {
   float: right;
   border: 1px solid #ccc;
@@ -156,8 +156,8 @@ p {
 }
 .row-6 {
   border: 1px solid #212529;
-  padding: 8px;
-  margin: 6px 12px;
+  padding: 10px;
+  margin: 8px 8px;
   border-radius: 10px;
   font-size: 20px;
   background: rgba(62, 166, 227, 0.6);
