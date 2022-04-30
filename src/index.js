@@ -21,13 +21,36 @@ function formatDate(timestamp) {
   return `${day} ${hours}: ${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = ``;
+  let days = ["Sat", "Sun", "Mon", "Tue", "Wed"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="row-6">
+        <div class="row">
+          <div class="col">${day}</div>
+          <div class="col">21°</div>
+          <div class="col">
+          <i class="fa-solid fa-cloud-showers-heavy text-dark"></i>
+        </div>
+          <div class="col">19°</div>
+      </div>
+    </div>
+      `;
+  });
+
+  forecastElement.innerHTML = forecastHTML;
+}
 function showWeather(response) {
   celsiusTemperature = response.data.main.temp;
   windSpeed = Math.round(response.data.wind.speed);
   let temperature = Math.round(celsiusTemperature);
   let humidity = response.data.main.humidity;
   let speed = windSpeed;
-  console.log(response);
+
   let icon = response.data.weather[0].icon;
 
   document.querySelector("h1").innerHTML = response.data.name;
@@ -118,5 +141,7 @@ let celsiusButton = document.querySelector("#celsius-temp");
 celsiusButton.addEventListener("click", showCelsiusTemp);
 
 let celsiusTemperature = null;
+
+displayForecast();
 
 searchCity("New Zealand");
