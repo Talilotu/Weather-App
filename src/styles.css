@@ -138,8 +138,11 @@ p {
 }
 .forecast-icon {
   display: block;
-  margin: -16px auto;
-  display: inline-block;
+  margin: -16px;
+}
+.forecast-temp {
+  margin: 0 auto;
+  margin-left: 10px;
 }
 .right-column {
   float: right;
