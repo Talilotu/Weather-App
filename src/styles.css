@@ -74,23 +74,28 @@ h4 {
   margin-right: -10px;
   margin-left: 5px;
 }
-
-.first-box {
-  margin: 15px auto;
-  max-width: 290px;
-  border: 2px solid rgb(168, 165, 165);
+.wrap {
+  justify-content: center;
+}
+.left-column {
+  text-align: center;
+  border: 1px solid #ccc;
   border-radius: 50px;
   background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
-  text-align: center;
+  margin: 10px 5px 10px 0px;
+  padding: 10px;
+  height: 370px;
+  width: 290px;
+  float: left;
   border: none;
-  margin-right: -180px;
-  padding-bottom: 15px;
 }
+
 h1 {
   padding-top: 10px;
   font-size: 45px;
   margin: auto;
   max-width: 250px;
+  line-height: 45px;
 }
 p {
   line-height: 20px;
@@ -130,19 +135,24 @@ p {
   margin-top: -30px;
 }
 .forecast {
-  margin: 15px auto;
   margin-left: 16px;
   font-weight: 550;
+  margin-top: 30px;
+  line-height: 2px;
 }
-.fourth-section {
-  margin: 15px auto;
-  max-width: 290px;
-  border: 1px solid #bbb;
+
+.right-column {
+  float: right;
+  border: 1px solid #ccc;
   border-radius: 50px;
   background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
+  margin: 10px 0px 10px 0px;
+  padding: 10px;
+  height: 370px;
+  width: 290px;
+  display: inline;
+  position: relative;
   border: none;
-  padding-bottom: 15px;
-  margin-left: 200px;
 }
 .row-6 {
   border: 1px solid #212529;
@@ -152,6 +162,7 @@ p {
   font-size: 20px;
   background: rgba(62, 166, 227, 0.6);
   border: none;
+  max-width: 400px;
 }
 .row-6:hover {
   background: rgb(62, 166, 227);

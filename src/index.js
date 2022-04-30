@@ -119,4 +119,4 @@ celsiusButton.addEventListener("click", showCelsiusTemp);
 
 let celsiusTemperature = null;
 
-searchCity("Sydney");
+searchCity("New Zealand");
